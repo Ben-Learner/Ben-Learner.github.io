@@ -5,7 +5,7 @@ date: 2023-06-05 20:26:26
 tags:
 ---
 
-# Development of a near-autonomous diagnostic and decision-making framework for HTR-PM
+# Development of a near-autonomous diagnostic and decision-making framework for HTR-PM.
 
 ## What is **Autonomous Control System(ACS)?**
 
