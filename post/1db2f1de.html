@@ -1,0 +1,208 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>ideas | Go</title><meta name="author" content="Ben Qi"><meta name="copyright" content="Ben Qi"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Development of a near-autonomous diagnostic and decision-making framework for HTR-PM.What is Autonomous Control System(ACS)?Autonomous control systems are intelligent systems with self-governance abil">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ideas">
+<meta property="og:url" content="http://example.com/post/1db2f1de.html">
+<meta property="og:site_name" content="Go">
+<meta property="og:description" content="Development of a near-autonomous diagnostic and decision-making framework for HTR-PM.What is Autonomous Control System(ACS)?Autonomous control systems are intelligent systems with self-governance abil">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-06-05T12:26:26.000Z">
+<meta property="article:modified_time" content="2023-06-05T12:41:13.809Z">
+<meta property="article:author" content="Ben Qi">
+<meta name="twitter:card" content="summary"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/post/1db2f1de"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'ideas',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-06-05 20:41:13'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Go</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">ideas</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-06-05T12:26:26.000Z" title="发表于 2023-06-05 20:26:26">2023-06-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-06-05T12:41:13.809Z" title="更新于 2023-06-05 20:41:13">2023-06-05</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="ideas"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Development-of-a-near-autonomous-diagnostic-and-decision-making-framework-for-HTR-PM"><a href="#Development-of-a-near-autonomous-diagnostic-and-decision-making-framework-for-HTR-PM" class="headerlink" title="Development of a near-autonomous diagnostic and decision-making framework for HTR-PM."></a>Development of a near-autonomous diagnostic and decision-making framework for HTR-PM.</h1><h2 id="What-is-Autonomous-Control-System-ACS"><a href="#What-is-Autonomous-Control-System-ACS" class="headerlink" title="What is Autonomous Control System(ACS)?"></a>What is <strong>Autonomous Control System(ACS)?</strong></h2><p>Autonomous control systems are intelligent systems with self-governance ability to perform and execute control functions in the presence of uncertainty for an extended time. The degree of autonomy of an autonomous control system depends upon the extent to which it can perform <strong>fault diagnosis</strong>, <strong>planning</strong>, <strong>forecasting,</strong> and <strong>decision-making</strong> under uncertainty, without human intervention.</p>
+<h1 id="What-is-Near-Autonomous-Diagnostic-and-Decision-Making-NADDM-framework"><a href="#What-is-Near-Autonomous-Diagnostic-and-Decision-Making-NADDM-framework" class="headerlink" title="What is Near-Autonomous Diagnostic and Decision-Making (NADDM)framework ?"></a>What is Near-Autonomous Diagnostic and Decision-Making (NADDM)framework ?</h1><p>NADDM is a framework that provides recommendations to operators for plant modes ranging from normal operation to accident management. NADDM is a nearly autonomous system because the system only provides recommendations to the operators, yet the operator still holds the authority to make any decision. NAMAC has the potential to make a transition from the operator-centric plant control system to an AI-guided plant control system, where the decision-making process is automated.</p>
+<ul>
+<li>The system utilizes simulation-informed data-driven training, AI-guided inference, faster-than-real-time simulation, knowledge-based operating procedures, and severe accident management guidelines to aid in the establishment of the risk-informed decision-making process for normal operation, anticipated operational occurrences (AOO), Design Basis Accident (DBA), and Beyond Design Basis Accident (BDBA).</li>
+<li>There are two main advantages: 1) reducing human error and 2) recommending optimized action.</li>
+<li>The process leads to close the gap between risk-informed decision making for a real plant and risk assessment by “unnecessary conservatism”, which is based on predetermined conservative assumptions from traditional safety analysis.</li>
+<li>For the proof of concept study presented in this paper, the objective of the NAMAC system is to <strong>re-establish normal flow conditions during a single LOFA scenario.</strong></li>
+</ul>
+<h2 id="Diagnosis-scope-or-accident-scope"><a href="#Diagnosis-scope-or-accident-scope" class="headerlink" title="Diagnosis scope or accident scope"></a>Diagnosis scope or accident scope</h2><ul>
+<li>In order to identify the physical damage states, selecting the obvious variable which represents the plant damage is required.</li>
+</ul>
+<h1 id="system-strcture"><a href="#system-strcture" class="headerlink" title="system  strcture"></a>system  strcture</h1><h2 id="Knowledge-base"><a href="#Knowledge-base" class="headerlink" title="Knowledge base"></a>Knowledge base</h2><ul>
+<li><p>issue space</p>
+<p>Issue space defines the scenario in mathematical formulations. </p>
+</li>
+<li><p>simulation tool</p>
+<p>The simulation tool (system code with adequate fidelity) is required for generating training&#x2F;testing data set for the development of different DTs.</p>
+</li>
+<li><p>data repository</p>
+<p>Data repository has two elements: knowledge element and data element. Knowledge element consists of literature or information related to operating procedures and training materials, system configuration, initial conditions, reactor failure modes, experimental data, benchmarking results, etc. Data element consists of data generated by the simulation tool for development of NAMAC DTs and plant data collected from operational histories, transients, and events.</p>
+</li>
+</ul>
+<h2 id="Digital-Twin-DT-development-layer"><a href="#Digital-Twin-DT-development-layer" class="headerlink" title="Digital Twin(DT) development layer"></a>Digital Twin(DT) development layer</h2><p><em>A DT is a digital representation of a physical object or system that relies on real-time and past-history data to evaluate its complete states, to predict future transients, and to recommend appropriate control actions.</em></p>
+<blockquote>
+<p>Kahlen et al. (Kahlen et al., 2017) define DT based on three attributes: <strong>digital twin prototype (DTP), digital twin instance (DTI), and digital twin environment (DTE)</strong>.The DTE represents the application space for operating the DTs, and it can be further classified into predictive and interrogative DTEs. The predictive DT, sometimes known as prognosis DT, is used for predicting future behavior, and the predictive performance starts from the current point in the product’s lifecycle at its current state, and moves forward in time. The interrogative DT, also known as diagnosis DT, is used to interrogate the current and past histories of certain objects or systems.The DTE is limited to applications of system controls for advanced NPPs and referred to as DT functions</p>
+</blockquote>
+<p>These DTs can be treated as <strong>surrogate models</strong> for specific sets of information and knowledge from the knowledge base.</p>
+<ul>
+<li><p>Digital Twin for Diagnosis (DT-D) aims to monitor the unmeasurable and unobservable state variables by storing correlation and dependencies among different state variables. DT-D is used to determine the unobservable state variables that are potentially safety-significant, defined as Safety-Significant Factors (SSFs), including peak fuel centerline temperature and peak cladding temperature. The obtained values are fed to (1) prognosis for predicting future transients (2) strategy inventory for determining available control actions (3) discrepancy checker for continuous monitoring.<br>$$<br>SSF(t)&#x3D;	f_{DT-D}(X_D,P_D,KB_D)+\varepsilon_D<br>$$</p>
+</li>
+<li><p>Digital Twin for strategy inventory (DT-SI) aims to identify available actions based on the current state of the reactor (i.e., diagnosed plant state at the current time step), reactor’s safety limits, and component’s control limits. Implementation of strategy inventory requires knowledge of reactor system dynamics, technical specification, operating procedure, etc.</p>
+</li>
+<li><p>Digital Twin for Prognosis (DT-P) is used to predict the short-term transient and the consequences of control actions by storing the time-propagation of state variables with respect to reference information, including initial conditions, control actions, histories, etc. Compared to prognosis by direct plant models, data-driven models can make predictions with acceptable accuracy starting from an arbitrary point during a transient. Moreover, the running speed of DT-P by data-driven methods is fast enough to support real-time operations. The DT-P reads reactor information from DTD, together with available control actions, to predict the future transients of reactor states or consequences over a certain time range.<br>$$<br>C_{A,X}&#x3D;f_{DT-P}(A,X_{t_0},P_P,KB_P)+\varepsilon_P<br>$$</p>
+</li>
+<li><p>Digital Twin for Strategy Assessment (DT-SA) can be described as a decision-making module that aims to rank the control actions based on a consequence factor (obtained from prognosis) and a user-defined preference structure. The DT-P outputs are mainly used by strategy assessment for deciding the best strategies according to certain preference structures, which represent the preference of operator or risk management team to the economic and safety of a reactor.</p>
+<blockquote>
+<p>strategy assessment is performed by finding the limit surface (Smith et al., 2015) where the control inputs cause transition from safe to unsafe consequences. Control options are ranked based on the safety margin, while impact of component reliability.</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="NAMAC-operational-layer"><a href="#NAMAC-operational-layer" class="headerlink" title="NAMAC operational layer"></a>NAMAC operational layer</h2><p>Since NAMAC aims to support operators’ decision-making by making recommendations, a logic scheme is needed to support the final recommendation based on real-time observations and records by DTs. For example, NAMAC needs to figure out the complete states of the reactor by monitoring the unobservable state variables with DT-D; NAMAC also needs to understand the consequences of control actions by predicting the short-term transient of state variables with DT-P.</p>
+<h2 id="Plant-simulator"><a href="#Plant-simulator" class="headerlink" title="Plant simulator"></a>Plant simulator</h2><blockquote>
+<p>The EBR-II model is first modelled in steady state with GOTHIC to establish the normal operation regime of the plant. GOTHIC outputs a restart file representative of the steady state and a transient scenario is implemented through a GOTHIC-formatted text-based file called GOTHIC Command File (GCF).Perturbed variables (e.g. a pump speed change, a valve speed closure etc.) are flagged in the GCF to allow RAVEN sampling. A separate XML-based input file defines the RAVEN settings: number of samples (N), distribution type associated to the variables, variable bounds, and targeted outputs (i.e. potential features).The RAVEN execution replaces the variables drawn from the RAVEN source code into the GCF and runs successively the N samples with the GOTHIC solver. At the end the N GOTHIC executions, RAVEN parses the GOTHIC outputs (SGR files) and dumps the targeted parameters into a Comma separated file (CSV) or a HDF5 files.</p>
+</blockquote>
+<ul>
+<li>Simulate the accident scenario for the case study;  </li>
+<li>Generate virtual sensor data for plant state diagnosis;  </li>
+<li>Accept control recommendations from NAMAC system.</li>
+</ul>
+<h2 id="NAMAC-operation"><a href="#NAMAC-operation" class="headerlink" title="NAMAC operation"></a>NAMAC operation</h2><img src="Users\齐奔\AppData\Roaming\Typora\typora-user-images\image-20230324175510733.png" alt="image-20230324175510733" style="zoom:80%;">
+
+<p>HTR-PM</p>
+<p><img src="Users\齐奔\AppData\Roaming\Typora\typora-user-images\image-20230327105520890.png" alt="image-20230327105520890"></p>
+<p><img src="Users\齐奔\AppData\Roaming\Typora\typora-user-images\image-20230327105535764.png" alt="image-20230327105535764"></p>
+<p><img src="Users\齐奔\AppData\Roaming\Typora\typora-user-images\image-20230329155438658.png" alt="image-20230329155438658"></p>
+<p><img src="Users\齐奔\AppData\Roaming\Typora\typora-user-images\image-20230329172753333.png" alt="image-20230329172753333"></p>
+<p>用于预防性维修和优化操作效率</p>
+<p>通过预训练模型自我进化</p>
+<p>对诊断结果给出不确定性评估，准确率较低时请求操作员帮助</p>
+<img src="1db2f1de/image-20230329175056005.png" class title="cGAN">
+
+<p><img src="Ben-Learner.github.io\source_posts\ideas\image-20230329175056005.png" alt="image-20230329175056005"></p>
+<p><img src="Users\齐奔\AppData\Roaming\Typora\typora-user-images\image-20230329201600191.png" alt="image-20230329201600191"></p>
+<p><img src="Users\齐奔\AppData\Roaming\Typora\typora-user-images\image-20230329202413561.png" alt="image-20230329202413561"></p>
+<p><img src="Users\齐奔\AppData\Roaming\Typora\typora-user-images\image-20230330111359623.png" alt="image-20230330111359623"></p>
+<p><img src="Users\齐奔\AppData\Roaming\Typora\typora-user-images\image-20230330174402245.png" alt="image-20230330174402245"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Ben Qi</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/post/1db2f1de.html">http://example.com/post/1db2f1de.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">Go</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/post/1f18a9aa.html"><img class="next-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">年终总结2023</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Ben Qi</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Ben-Learner"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Development-of-a-near-autonomous-diagnostic-and-decision-making-framework-for-HTR-PM"><span class="toc-number">1.</span> <span class="toc-text">Development of a near-autonomous diagnostic and decision-making framework for HTR-PM.</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#What-is-Autonomous-Control-System-ACS"><span class="toc-number">1.1.</span> <span class="toc-text">What is Autonomous Control System(ACS)?</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#What-is-Near-Autonomous-Diagnostic-and-Decision-Making-NADDM-framework"><span class="toc-number">2.</span> <span class="toc-text">What is Near-Autonomous Diagnostic and Decision-Making (NADDM)framework ?</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Diagnosis-scope-or-accident-scope"><span class="toc-number">2.1.</span> <span class="toc-text">Diagnosis scope or accident scope</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#system-strcture"><span class="toc-number">3.</span> <span class="toc-text">system  strcture</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Knowledge-base"><span class="toc-number">3.1.</span> <span class="toc-text">Knowledge base</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Digital-Twin-DT-development-layer"><span class="toc-number">3.2.</span> <span class="toc-text">Digital Twin(DT) development layer</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#NAMAC-operational-layer"><span class="toc-number">3.3.</span> <span class="toc-text">NAMAC operational layer</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Plant-simulator"><span class="toc-number">3.4.</span> <span class="toc-text">Plant simulator</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#NAMAC-operation"><span class="toc-number">3.5.</span> <span class="toc-text">NAMAC operation</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/post/1db2f1de.html" title="ideas"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ideas"/></a><div class="content"><a class="title" href="/post/1db2f1de.html" title="ideas">ideas</a><time datetime="2023-06-05T12:26:26.000Z" title="发表于 2023-06-05 20:26:26">2023-06-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/1f18a9aa.html" title="年终总结2023"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="年终总结2023"/></a><div class="content"><a class="title" href="/post/1f18a9aa.html" title="年终总结2023">年终总结2023</a><time datetime="2023-06-05T11:51:45.448Z" title="发表于 2023-06-05 19:51:45">2023-06-05</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Ben Qi</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
