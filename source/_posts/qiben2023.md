@@ -34,11 +34,11 @@ abbrlink: 1f18a9aa
 
 由于核动力装置具有极高的安全性和可靠性，从商用核电厂诞生至今发生了极少的核事故，目前只能利用仿真数据构造有限大小的数据集。而GAN作为一种生成模型，具有虚假数据生成能力，我们希望借助GAN模型生成更多的数据，来增强原始数据集。
 
-{% asset_img cGAN.png  cGAN %}
+![](cGAN.png)
 
 <center>条件生成对抗网络</center>
 
-{% asset_img TimeGAN.png  TimeGAN %}
+![](TimeGAN.png)
 
 
 <center>时间序列生成对抗网络</center>
@@ -47,9 +47,9 @@ abbrlink: 1f18a9aa
 
 **（1）保真度：**受视觉领域图像生成思想启发，将生成数据和真实数据转为图像，通过观察图像效果和FID值计算，来比较两种模型的性能。
 
-{% asset_img 结果1.png  结果1.png %}
+![](结果1.png)
 
-{% asset_img 结果2.png  结果2.png %}
+![](结果2.png)
 
 **（2）事故诊断得分：**用生成数据训练核电厂事故诊断模型，在真实数据集上测试，用真实数据测试集的准确率作为得分。
 
@@ -88,7 +88,7 @@ abbrlink: 1f18a9aa
 | Transformer                      | 121.50M   | 0.04M  | 3037.5       | 88.24%       |
 | Transformer(with first BN layer) |           |        |              | 99.16%       |
 
-{% asset_img 三维图.png  三维图 %}
+![](三维图.png)
 
 <center>模型浮点计算速度、参数量和测试集准确率三维图</center>
 
@@ -138,7 +138,7 @@ This paper presents a review of various AI-based system-level fault diagnosis me
 
 #### 阅读文献，摸索博士阶段课题。
 
-{% asset_img 研究路线.png  研究路线 %}
+![](研究路线.png)
 
 ## 未来计划
 
