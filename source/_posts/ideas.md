@@ -78,19 +78,15 @@ Since NAMAC aims to support operators’ decision-making by making recommendatio
 
 ## NAMAC operation
 
-<img src="C:\Users\齐奔\AppData\Roaming\Typora\typora-user-images\image-20230324175510733.png" alt="image-20230324175510733" style="zoom:80%;" />
-
-HTR-PM
-
-![image-20230327105520890](C:\Users\齐奔\AppData\Roaming\Typora\typora-user-images\image-20230327105520890.png)
-
-![image-20230327105535764](C:\Users\齐奔\AppData\Roaming\Typora\typora-user-images\image-20230327105535764.png)
-
-![image-20230329155438658](C:\Users\齐奔\AppData\Roaming\Typora\typora-user-images\image-20230329155438658.png)
+![](image-1.png)
 
 
 
-![image-20230329172753333](C:\Users\齐奔\AppData\Roaming\Typora\typora-user-images\image-20230329172753333.png)
+![](image-2.png)
+
+![](image-3.png)
+
+![](image-4.png)
 
 用于预防性维修和优化操作效率
 
@@ -98,14 +94,10 @@ HTR-PM
 
 对诊断结果给出不确定性评估，准确率较低时请求操作员帮助
 
-{% asset_img   image-20230329175056005.png cGAN %}
+![](image-5.png)
 
-![image-20230329175056005](D:\Ben-Learner.github.io\source\_posts\ideas\image-20230329175056005.png)
+![](image-6.png)
 
-![image-20230329201600191](C:\Users\齐奔\AppData\Roaming\Typora\typora-user-images\image-20230329201600191.png)
+![](image-7.png)
 
-![image-20230329202413561](C:\Users\齐奔\AppData\Roaming\Typora\typora-user-images\image-20230329202413561.png)
-
-![image-20230330111359623](C:\Users\齐奔\AppData\Roaming\Typora\typora-user-images\image-20230330111359623.png)
-
-![image-20230330174402245](C:\Users\齐奔\AppData\Roaming\Typora\typora-user-images\image-20230330174402245.png)
+![](image-8.png)
