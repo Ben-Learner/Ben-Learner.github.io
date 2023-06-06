@@ -1,5 +1,5 @@
 ---
-title: ideas
+title: Research ideas
 abbrlink: 1db2f1de
 date: 2023-06-05 20:26:26
 tags:
